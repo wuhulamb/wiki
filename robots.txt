@@ -1,0 +1,1 @@
+Sitemap: /wiki/sitemap.xml

@@ -13,9 +13,23 @@
     
     "relUrl": "/docs/links/"
   },"2": {
+    "doc": "Bash",
+    "title": "Bash",
+    "content": " ",
+    "url": "/wiki/docs/bash/",
+    
+    "relUrl": "/docs/bash/"
+  },"3": {
+    "doc": "Bash",
+    "title": "1. 将当前文件夹所有pdf文件转成txt文件",
+    "content": "#!/usr/bin/env bash # 遍历当前文件夹中的所有文件 for file in *; do # 检查文件是否是 PDF 文件 if [[ $file == *.pdf ]]; then # 使用 pdftotext 将 PDF 转换为文本 pdftotext \"$file\" \"${file%.pdf}.txt\" echo \"Convert $file to ${file%.pdf}.txt\" fi done echo \"Conversion complete.\" . ",
+    "url": "/wiki/docs/bash/#1-%E5%B0%86%E5%BD%93%E5%89%8D%E6%96%87%E4%BB%B6%E5%A4%B9%E6%89%80%E6%9C%89pdf%E6%96%87%E4%BB%B6%E8%BD%AC%E6%88%90txt%E6%96%87%E4%BB%B6",
+    
+    "relUrl": "/docs/bash/#1-将当前文件夹所有pdf文件转成txt文件"
+  },"4": {
     "doc": "Home",
     "title": "Home",
-    "content": "Hi, 这里是wuhulamb的个人知识库. ",
+    "content": "Hi，这里是wuhulamb的知识杂货铺，想到啥记啥，不定时更新. ",
     "url": "/wiki/",
     
     "relUrl": "/"

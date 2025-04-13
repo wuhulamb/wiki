@@ -1616,4 +1616,6 @@ a.skip-to-main:focus, a.skip-to-main:active { color: #7253ed; background-color: 
 
 div.opaque { background-color: #fff; }
 
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6, .main-content #toctitle { margin-top: 1.3em; margin-bottom: 0.8em; }
+
 /*# sourceMappingURL=just-the-docs-default.css.map */

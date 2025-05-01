@@ -48,34 +48,48 @@
     
     "relUrl": "/"
   },"7": {
+    "doc": "PDF处理",
+    "title": "PDF处理",
+    "content": " ",
+    "url": "/wiki/docs/bash/pdf/",
+    
+    "relUrl": "/docs/bash/pdf/"
+  },"8": {
+    "doc": "PDF处理",
+    "title": "1. 提取PDF文件中的某些页",
+    "content": "先使用 pdfseparate 将 input.pdf 的33-35页分别提取至单个PDF文件中（page_33.pdf, page_34.pdf, page_35.pdf） . pdfseparate -f 33 -l 35 input.pdf page_%d.pdf . 再使用 pdfunite 将这些单个PDF文件（page_33.pdf, page_34.pdf, page_35.pdf）合并到output.pdf中 . pdfunite page_{33,34,35}.pdf output.pdf . ",
+    "url": "/wiki/docs/bash/pdf/#1-%E6%8F%90%E5%8F%96pdf%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E6%9F%90%E4%BA%9B%E9%A1%B5",
+    
+    "relUrl": "/docs/bash/pdf/#1-提取pdf文件中的某些页"
+  },"9": {
     "doc": "科学上网",
     "title": "科学上网",
     "content": " ",
     "url": "/wiki/docs/network/proxy/",
     
     "relUrl": "/docs/network/proxy/"
-  },"8": {
+  },"10": {
     "doc": "科学上网",
     "title": "1. 拥有一台可以访问外网的服务器",
     "content": "可以使用ssh登录 . ",
     "url": "/wiki/docs/network/proxy/#1-%E6%8B%A5%E6%9C%89%E4%B8%80%E5%8F%B0%E5%8F%AF%E4%BB%A5%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8",
     
     "relUrl": "/docs/network/proxy/#1-拥有一台可以访问外网的服务器"
-  },"9": {
+  },"11": {
     "doc": "科学上网",
     "title": "2. 使用 ssh -D 代理流量",
     "content": "ssh -D 1080 -N user@your_machine . | -D 1080 : 将本地1080端口的流量转发到服务器 | -N : 不执行远程命令（所以也不会登录进去获得shell） | . ",
     "url": "/wiki/docs/network/proxy/#2-%E4%BD%BF%E7%94%A8-ssh--d-%E4%BB%A3%E7%90%86%E6%B5%81%E9%87%8F",
     
     "relUrl": "/docs/network/proxy/#2-使用-ssh--d-代理流量"
-  },"10": {
+  },"12": {
     "doc": "科学上网",
     "title": "3. 本地设置流量转发到1080端口",
     "content": "(1) firefox浏览器可直接在网络设置中配置手动代理 . | SOCKS Host: 127.0.0.1 | Port: 1080 | 勾选SOCKS v5 | . (2) 命令行使用 export 修改环境变量 . export ALL_PROXY=socks5://127.0.0.1:1080 . 删除ALL_PROXY变量，关闭代理 . unset ALL_PROXY . ",
     "url": "/wiki/docs/network/proxy/#3-%E6%9C%AC%E5%9C%B0%E8%AE%BE%E7%BD%AE%E6%B5%81%E9%87%8F%E8%BD%AC%E5%8F%91%E5%88%B01080%E7%AB%AF%E5%8F%A3",
     
     "relUrl": "/docs/network/proxy/#3-本地设置流量转发到1080端口"
-  },"11": {
+  },"13": {
     "doc": "Tools",
     "title": "Tools",
     "content": ". | Favicon generator | . ",

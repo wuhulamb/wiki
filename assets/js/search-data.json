@@ -113,7 +113,7 @@
   },"16": {
     "doc": "Tools",
     "title": "Tools",
-    "content": ". | Favicon generator | . ",
+    "content": ". | Favicon generator | Let’s Encrypt生成ssl证书（官方推荐Certbot） | . ",
     "url": "/wiki/docs/links/tools/",
     
     "relUrl": "/docs/links/tools/"

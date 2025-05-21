@@ -117,5 +117,19 @@
     "url": "/wiki/docs/links/tools/",
     
     "relUrl": "/docs/links/tools/"
+  },"17": {
+    "doc": "Wireshark",
+    "title": "Wireshark",
+    "content": " ",
+    "url": "/wiki/docs/network/wireshark/",
+    
+    "relUrl": "/docs/network/wireshark/"
+  },"18": {
+    "doc": "Wireshark",
+    "title": "TLS/SSL 加密流量解密",
+    "content": "创建 /path/to/ssl_key.log 空文件 . touch /path/to/ssl_key.log . 设置 SSLKEYLOGFILE 环境变量 . export SSLKEYLOGFILE=/path/to/ssl_key.log . 打开 Wireshark，进入 Edit -&gt; Preferences -&gt; Protocols -&gt; TLS . 设置 (Pre)-Master-Secret log filename 为上述密钥日志文件路径（如 /path/to/ssl_key.log ） . 重新抓包，HTTPS 流量将自动解密。找到 Client Hello 包，右击选择 Follow -&gt; TLS Stream ，即可看到解密后的明文 . （payload部分如果是乱码，有可能是因为 HTTPS 流量使用 Content-Encoding: gzip 压缩，Wireshark不会自动解压压缩数据。Gzip 文件头格式为 1F 8B ，可以将这部分内容提取出来，解压后即为明文。） . xxd -r -p hex.txt response.gz gzip -d response.gz # response.gz被删除，输出解压后的文件 response . ",
+    "url": "/wiki/docs/network/wireshark/#tlsssl-%E5%8A%A0%E5%AF%86%E6%B5%81%E9%87%8F%E8%A7%A3%E5%AF%86",
+    
+    "relUrl": "/docs/network/wireshark/#tlsssl-加密流量解密"
   }
 }

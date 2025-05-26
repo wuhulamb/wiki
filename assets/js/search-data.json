@@ -77,54 +77,61 @@
     "relUrl": "/docs/bash/pdf/"
   },"11": {
     "doc": "PDF处理",
-    "title": "1. 提取PDF文件中的某些页",
+    "title": "1. 简单提取/合并PDF文件",
     "content": "先使用 pdfseparate 将 input.pdf 的33-35页分别提取至单个PDF文件中（page_33.pdf, page_34.pdf, page_35.pdf） . pdfseparate -f 33 -l 35 input.pdf page_%d.pdf . 再使用 pdfunite 将这些单个PDF文件（page_33.pdf, page_34.pdf, page_35.pdf）合并到output.pdf中 . pdfunite page_{33,34,35}.pdf output.pdf . ",
-    "url": "/wiki/docs/bash/pdf/#1-%E6%8F%90%E5%8F%96pdf%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E6%9F%90%E4%BA%9B%E9%A1%B5",
+    "url": "/wiki/docs/bash/pdf/#1-%E7%AE%80%E5%8D%95%E6%8F%90%E5%8F%96%E5%90%88%E5%B9%B6pdf%E6%96%87%E4%BB%B6",
     
-    "relUrl": "/docs/bash/pdf/#1-提取pdf文件中的某些页"
+    "relUrl": "/docs/bash/pdf/#1-简单提取合并pdf文件"
   },"12": {
+    "doc": "PDF处理",
+    "title": "2. 高级合并PDF文件（保留文档内部超链接）",
+    "content": "假如有 simple_1.pdf, complex_2_20.pdf, simple_21.pdf ，其中 simple_*.pdf 均为简单pdf文件，不包含超链接，而 complex_2_20.pdf 包含完整的文档内部超链接，超链接不指向 simple_*.pdf ，则可以使用 qpdf 工具进行合并 . 安装 qpdf . sudo apt update sudo apt install qpdf . 合并PDF使用示例 . qpdf --empty --pages simple_1.pdf complex_2_20.pdf simple_21.pdf -- output.pdf . ",
+    "url": "/wiki/docs/bash/pdf/#2-%E9%AB%98%E7%BA%A7%E5%90%88%E5%B9%B6pdf%E6%96%87%E4%BB%B6%E4%BF%9D%E7%95%99%E6%96%87%E6%A1%A3%E5%86%85%E9%83%A8%E8%B6%85%E9%93%BE%E6%8E%A5",
+    
+    "relUrl": "/docs/bash/pdf/#2-高级合并pdf文件保留文档内部超链接"
+  },"13": {
     "doc": "科学上网",
     "title": "科学上网",
     "content": " ",
     "url": "/wiki/docs/network/proxy/",
     
     "relUrl": "/docs/network/proxy/"
-  },"13": {
+  },"14": {
     "doc": "科学上网",
     "title": "1. 拥有一台可以访问外网的服务器",
     "content": "可以使用ssh登录 . ",
     "url": "/wiki/docs/network/proxy/#1-%E6%8B%A5%E6%9C%89%E4%B8%80%E5%8F%B0%E5%8F%AF%E4%BB%A5%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8",
     
     "relUrl": "/docs/network/proxy/#1-拥有一台可以访问外网的服务器"
-  },"14": {
+  },"15": {
     "doc": "科学上网",
     "title": "2. 使用 ssh -D 代理流量",
     "content": "ssh -D 1080 -N user@your_machine . | -D 1080 : 将本地1080端口的流量转发到服务器 | -N : 不执行远程命令（所以也不会登录进去获得shell） | . ",
     "url": "/wiki/docs/network/proxy/#2-%E4%BD%BF%E7%94%A8-ssh--d-%E4%BB%A3%E7%90%86%E6%B5%81%E9%87%8F",
     
     "relUrl": "/docs/network/proxy/#2-使用-ssh--d-代理流量"
-  },"15": {
+  },"16": {
     "doc": "科学上网",
     "title": "3. 本地设置流量转发到1080端口",
     "content": "(1) firefox浏览器可直接在网络设置中配置手动代理 . | SOCKS Host: 127.0.0.1 | Port: 1080 | 勾选SOCKS v5 | . (2) 命令行使用 export 修改环境变量 . export ALL_PROXY=socks5://127.0.0.1:1080 . 删除ALL_PROXY变量，关闭代理 . unset ALL_PROXY . ",
     "url": "/wiki/docs/network/proxy/#3-%E6%9C%AC%E5%9C%B0%E8%AE%BE%E7%BD%AE%E6%B5%81%E9%87%8F%E8%BD%AC%E5%8F%91%E5%88%B01080%E7%AB%AF%E5%8F%A3",
     
     "relUrl": "/docs/network/proxy/#3-本地设置流量转发到1080端口"
-  },"16": {
+  },"17": {
     "doc": "Tools",
     "title": "Tools",
     "content": ". | Favicon generator | Let’s Encrypt生成ssl证书（官方推荐Certbot） | . ",
     "url": "/wiki/docs/links/tools/",
     
     "relUrl": "/docs/links/tools/"
-  },"17": {
+  },"18": {
     "doc": "Wireshark",
     "title": "Wireshark",
     "content": " ",
     "url": "/wiki/docs/network/wireshark/",
     
     "relUrl": "/docs/network/wireshark/"
-  },"18": {
+  },"19": {
     "doc": "Wireshark",
     "title": "TLS/SSL 加密流量解密",
     "content": "创建 /path/to/ssl_key.log 空文件 . touch /path/to/ssl_key.log . 设置 SSLKEYLOGFILE 环境变量 . export SSLKEYLOGFILE=/path/to/ssl_key.log . 打开 Wireshark，进入 Edit -&gt; Preferences -&gt; Protocols -&gt; TLS . 设置 (Pre)-Master-Secret log filename 为上述密钥日志文件路径（如 /path/to/ssl_key.log ） . 重新抓包，HTTPS 流量将自动解密。找到 Client Hello 包，右击选择 Follow -&gt; TLS Stream ，即可看到解密后的明文 . （payload部分如果是乱码，有可能是因为 HTTPS 流量使用 Content-Encoding: gzip 压缩，Wireshark不会自动解压压缩数据。Gzip 文件头格式为 1F 8B ，可以将这部分内容提取出来，解压后即为明文。） . xxd -r -p hex.txt response.gz gzip -d response.gz # response.gz被删除，输出解压后的文件 response . ",

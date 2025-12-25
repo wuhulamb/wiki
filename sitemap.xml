@@ -10,7 +10,13 @@
 <loc>/wiki/docs/links/cs/</loc>
 </url>
 <url>
+<loc>/wiki/docs/video/ffmpeg/</loc>
+</url>
+<url>
 <loc>/wiki/docs/network/</loc>
+</url>
+<url>
+<loc>/wiki/docs/video/</loc>
 </url>
 <url>
 <loc>/wiki/docs/bash/</loc>
@@ -20,6 +26,9 @@
 </url>
 <url>
 <loc>/wiki/</loc>
+</url>
+<url>
+<loc>/wiki/docs/video/m3u8/</loc>
 </url>
 <url>
 <loc>/wiki/docs/bash/pdf/</loc>

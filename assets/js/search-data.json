@@ -62,40 +62,40 @@
     
     "relUrl": "/docs/video/ffmpeg/#裁剪视频"
   },"9": {
-    "doc": "Network",
-    "title": "Networks",
+    "doc": "Git",
+    "title": "Git",
     "content": " ",
-    "url": "/wiki/docs/network/#networks",
+    "url": "/wiki/docs/bash/git/",
     
-    "relUrl": "/docs/network/#networks"
+    "relUrl": "/docs/bash/git/"
   },"10": {
-    "doc": "Network",
-    "title": "Network",
-    "content": " ",
-    "url": "/wiki/docs/network/",
+    "doc": "Git",
+    "title": "查看",
+    "content": "git remote -v # 查看推送的远端地址 git branch # 查看所有分支 git log # 查看提交日志 git log --graph --oneline # 查看分支形状 . ",
+    "url": "/wiki/docs/bash/git/#%E6%9F%A5%E7%9C%8B",
     
-    "relUrl": "/docs/network/"
+    "relUrl": "/docs/bash/git/#查看"
   },"11": {
-    "doc": "Video",
-    "title": "Video",
-    "content": " ",
-    "url": "/wiki/docs/video/",
+    "doc": "Git",
+    "title": "配置",
+    "content": "git remote set-url &lt;name&gt; &lt;newurl&gt; # 设置远端地址 git push -u origin &lt;remote-branch&gt; # 添加上游追踪（远端仓库没有分支可以使用该命令新建） . ",
+    "url": "/wiki/docs/bash/git/#%E9%85%8D%E7%BD%AE",
     
-    "relUrl": "/docs/video/"
+    "relUrl": "/docs/bash/git/#配置"
   },"12": {
-    "doc": "Bash",
-    "title": "Bash",
-    "content": " ",
-    "url": "/wiki/docs/bash/",
+    "doc": "Git",
+    "title": "恢复",
+    "content": "git restore --staged &lt;file&gt; # 清除暂存区 git restore &lt;file&gt; # 丢弃修改 . ",
+    "url": "/wiki/docs/bash/git/#%E6%81%A2%E5%A4%8D",
     
-    "relUrl": "/docs/bash/"
+    "relUrl": "/docs/bash/git/#恢复"
   },"13": {
-    "doc": "Prompt",
-    "title": "Prompt",
-    "content": " ",
-    "url": "/wiki/docs/prompt/",
+    "doc": "Git",
+    "title": "分支",
+    "content": "git checkout &lt;branch&gt; # 切换到某一分支 git checkout -b &lt;new-branch&gt; # 新建并切换分支 git merge &lt;branch&gt; # 合并到当前分支，能快进则快进；不能快进则生成合并提交 git merge --ff-only &lt;branch&gt; # 合并到当前分支，只允许快进 git branch -d &lt;branch&gt; # 删除合并后的分支 git reset --soft &lt;commit&gt; # 重置提交记录，不修改暂存区文件 git reset --hard &lt;commit&gt; # 重置提交记录，完全重置 . ",
+    "url": "/wiki/docs/bash/git/#%E5%88%86%E6%94%AF",
     
-    "relUrl": "/docs/prompt/"
+    "relUrl": "/docs/bash/git/#分支"
   },"14": {
     "doc": "Links",
     "title": "Links",
@@ -104,139 +104,174 @@
     
     "relUrl": "/docs/links/"
   },"15": {
+    "doc": "Network",
+    "title": "Networks",
+    "content": " ",
+    "url": "/wiki/docs/network/#networks",
+    
+    "relUrl": "/docs/network/#networks"
+  },"16": {
+    "doc": "Network",
+    "title": "Network",
+    "content": " ",
+    "url": "/wiki/docs/network/",
+    
+    "relUrl": "/docs/network/"
+  },"17": {
+    "doc": "Video",
+    "title": "Video",
+    "content": " ",
+    "url": "/wiki/docs/video/",
+    
+    "relUrl": "/docs/video/"
+  },"18": {
+    "doc": "Bash",
+    "title": "Bash",
+    "content": " ",
+    "url": "/wiki/docs/bash/",
+    
+    "relUrl": "/docs/bash/"
+  },"19": {
+    "doc": "Prompt",
+    "title": "Prompt",
+    "content": " ",
+    "url": "/wiki/docs/prompt/",
+    
+    "relUrl": "/docs/prompt/"
+  },"20": {
     "doc": "Home",
     "title": "Home",
     "content": "Hi，这里是wuhulamb的知识杂货铺，欢迎光临！ . ",
     "url": "/wiki/",
     
     "relUrl": "/"
-  },"16": {
+  },"21": {
     "doc": "阅读文献",
     "title": "阅读文献",
     "content": " ",
     "url": "/wiki/docs/prompt/literature/",
     
     "relUrl": "/docs/prompt/literature/"
-  },"17": {
+  },"22": {
     "doc": "阅读文献",
     "title": "01 查看文献大纲",
     "content": "列出上传文献的大纲目录 . ",
     "url": "/wiki/docs/prompt/literature/#01-%E6%9F%A5%E7%9C%8B%E6%96%87%E7%8C%AE%E5%A4%A7%E7%BA%B2",
     
     "relUrl": "/docs/prompt/literature/#01-查看文献大纲"
-  },"18": {
+  },"23": {
     "doc": "阅读文献",
     "title": "02 提炼文献内容",
     "content": "请仔细阅读上传的学术文献，编写分析报告。你的分析报告应包含以下两个部分： **第一部分：文献基本信息** 请提供：论文标题、所有作者、作者所属机构、发表期刊/会议名称、发表年份。 **第二部分：内容提炼与分析** 请按以下要点清晰、准确地提炼文献内容，确保保留原意： 1. **研究主题**：本文的核心研究问题或目标是什么？ 2. **理论基础**：论文建立在哪些重要的理论或文献基础上？ 3. **方法与数据**：采用了什么研究方法？数据来源和类型是什么？ 4. **机制分析**：论文是如何解释其核心变量之间的因果关系或关联的？作者提出了怎样的内在机制或理论路径来解释“为什么”以及“如何”发生作用？ 5. **核心结论**：研究得出的主要发现和最终论点是什么？ 6. **创新与贡献**：本研究最主要的创新点和对领域的贡献何在？ 7. **局限与展望**：作者指出了哪些研究局限性？对未来研究有何建议？此外，请简要评述本研究可能存在的其他潜在局限。 . ",
     "url": "/wiki/docs/prompt/literature/#02-%E6%8F%90%E7%82%BC%E6%96%87%E7%8C%AE%E5%86%85%E5%AE%B9",
     
     "relUrl": "/docs/prompt/literature/#02-提炼文献内容"
-  },"19": {
+  },"24": {
     "doc": "m3u8视频分段下载",
     "title": "m3u8视频分段下载",
     "content": " ",
     "url": "/wiki/docs/video/m3u8/",
     
     "relUrl": "/docs/video/m3u8/"
-  },"20": {
+  },"25": {
     "doc": "m3u8视频分段下载",
     "title": "视频下载",
     "content": "grep -E '^[^#]' *.m3u8 | while read; do echo \"https://play.4kvm.me/${REPLY}\"; done &gt; url for i in $(seq -w 1 $(wc -l &lt; url)); do filename=\"${i}.ts\"; if [ ! -f \"$filename\" ]; then url=$(sed -n \"${i}p\" url); curl -L -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:142.0) Gecko/20100101 Firefox/142.0' -o \"$filename\" \"$url\"; fi; done cat *.ts &gt; combined.ts ffmpeg -i combined.ts -c copy output.mp4 . 视频分段被套壳，需要裁切；请根据 xxd 的结果，选择合适的 bs 和 skip 值；正常的ts分段文件包头为 0x4740 . for i in $(seq -w 1 $(wc -l &lt; url)); do filename=\"${i}.ts\"; if [ ! -f \"${i}_fixed.ts\" ]; then dd if=\"$filename\" of=\"${i}_fixed.ts\" bs=16 skip=7; fi; done cat *_fixed.ts &gt; combined.ts . ",
     "url": "/wiki/docs/video/m3u8/#%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD",
     
     "relUrl": "/docs/video/m3u8/#视频下载"
-  },"21": {
+  },"26": {
     "doc": "m3u8视频分段下载",
     "title": "检查下载的视频分段文件个数是否和url中相同",
     "content": "ls *_fixed.ts | wc -l ls *.ts | wc -l . ",
     "url": "/wiki/docs/video/m3u8/#%E6%A3%80%E6%9F%A5%E4%B8%8B%E8%BD%BD%E7%9A%84%E8%A7%86%E9%A2%91%E5%88%86%E6%AE%B5%E6%96%87%E4%BB%B6%E4%B8%AA%E6%95%B0%E6%98%AF%E5%90%A6%E5%92%8Curl%E4%B8%AD%E7%9B%B8%E5%90%8C",
     
     "relUrl": "/docs/video/m3u8/#检查下载的视频分段文件个数是否和url中相同"
-  },"22": {
+  },"27": {
     "doc": "m3u8视频分段下载",
     "title": "检查是否有下载失败的文件（服务器会返回html）",
     "content": "find . -name \"*.ts\" -exec file {} \\; | grep \"ASCII text\" . ",
     "url": "/wiki/docs/video/m3u8/#%E6%A3%80%E6%9F%A5%E6%98%AF%E5%90%A6%E6%9C%89%E4%B8%8B%E8%BD%BD%E5%A4%B1%E8%B4%A5%E7%9A%84%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%9A%E8%BF%94%E5%9B%9Ehtml",
     
     "relUrl": "/docs/video/m3u8/#检查是否有下载失败的文件服务器会返回html"
-  },"23": {
+  },"28": {
     "doc": "m3u8视频分段下载",
     "title": "检查视频文件是否存在问题（无输出则没有问题）",
     "content": "ffmpeg -v error -i output.mp4 -f null - . ",
     "url": "/wiki/docs/video/m3u8/#%E6%A3%80%E6%9F%A5%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E9%97%AE%E9%A2%98%E6%97%A0%E8%BE%93%E5%87%BA%E5%88%99%E6%B2%A1%E6%9C%89%E9%97%AE%E9%A2%98",
     
     "relUrl": "/docs/video/m3u8/#检查视频文件是否存在问题无输出则没有问题"
-  },"24": {
+  },"29": {
     "doc": "PDF处理",
     "title": "PDF处理",
     "content": " ",
     "url": "/wiki/docs/bash/pdf/",
     
     "relUrl": "/docs/bash/pdf/"
-  },"25": {
+  },"30": {
     "doc": "PDF处理",
     "title": "1. 简单提取/合并PDF文件",
     "content": "先使用 pdfseparate 将 input.pdf 的33-35页分别提取至单个PDF文件中（page_33.pdf, page_34.pdf, page_35.pdf） . pdfseparate -f 33 -l 35 input.pdf page_%d.pdf . 再使用 pdfunite 将这些单个PDF文件（page_33.pdf, page_34.pdf, page_35.pdf）合并到output.pdf中 . pdfunite page_{33,34,35}.pdf output.pdf . ",
     "url": "/wiki/docs/bash/pdf/#1-%E7%AE%80%E5%8D%95%E6%8F%90%E5%8F%96%E5%90%88%E5%B9%B6pdf%E6%96%87%E4%BB%B6",
     
     "relUrl": "/docs/bash/pdf/#1-简单提取合并pdf文件"
-  },"26": {
+  },"31": {
     "doc": "PDF处理",
     "title": "2. 高级合并PDF文件（保留文档内部超链接）",
     "content": "假如有 simple_1.pdf, complex_2_20.pdf, simple_21.pdf ，其中 simple_*.pdf 均为简单pdf文件，不包含超链接，而 complex_2_20.pdf 包含完整的文档内部超链接，超链接不指向 simple_*.pdf ，则可以使用 qpdf 工具进行合并 . 安装 qpdf . sudo apt update sudo apt install qpdf . 合并PDF使用示例 . qpdf --empty --pages simple_1.pdf complex_2_20.pdf simple_21.pdf -- output.pdf . ",
     "url": "/wiki/docs/bash/pdf/#2-%E9%AB%98%E7%BA%A7%E5%90%88%E5%B9%B6pdf%E6%96%87%E4%BB%B6%E4%BF%9D%E7%95%99%E6%96%87%E6%A1%A3%E5%86%85%E9%83%A8%E8%B6%85%E9%93%BE%E6%8E%A5",
     
     "relUrl": "/docs/bash/pdf/#2-高级合并pdf文件保留文档内部超链接"
-  },"27": {
+  },"32": {
     "doc": "PDF处理",
     "title": "3. PDF转JPG",
     "content": "使用 Poppler 工具包中的 pdftoppm 工具 . pdftoppm -jpeg -r 300 input.pdf output . -r 选项指定输出分辨率为300（默认为150），最后输出结果为 output-1.jpg , output-2.jpg, output-3.jpg, … （依据input.pdf的页数） . ",
     "url": "/wiki/docs/bash/pdf/#3-pdf%E8%BD%ACjpg",
     
     "relUrl": "/docs/bash/pdf/#3-pdf转jpg"
-  },"28": {
+  },"33": {
     "doc": "科学上网",
     "title": "科学上网",
     "content": " ",
     "url": "/wiki/docs/network/proxy/",
     
     "relUrl": "/docs/network/proxy/"
-  },"29": {
+  },"34": {
     "doc": "科学上网",
     "title": "1. 拥有一台可以访问外网的服务器",
     "content": "可以使用ssh登录 . ",
     "url": "/wiki/docs/network/proxy/#1-%E6%8B%A5%E6%9C%89%E4%B8%80%E5%8F%B0%E5%8F%AF%E4%BB%A5%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8",
     
     "relUrl": "/docs/network/proxy/#1-拥有一台可以访问外网的服务器"
-  },"30": {
+  },"35": {
     "doc": "科学上网",
     "title": "2. 使用 ssh -D 代理流量",
     "content": "ssh -D 1080 -N user@your_machine . | -D 1080 : 将本地1080端口的流量转发到服务器 | -N : 不执行远程命令（所以也不会登录进去获得shell） | . ",
     "url": "/wiki/docs/network/proxy/#2-%E4%BD%BF%E7%94%A8-ssh--d-%E4%BB%A3%E7%90%86%E6%B5%81%E9%87%8F",
     
     "relUrl": "/docs/network/proxy/#2-使用-ssh--d-代理流量"
-  },"31": {
+  },"36": {
     "doc": "科学上网",
     "title": "3. 本地设置流量转发到1080端口",
     "content": "(1) firefox浏览器可直接在网络设置中配置手动代理 . | SOCKS Host: 127.0.0.1 | Port: 1080 | 勾选SOCKS v5 | . (2) 命令行使用 export 修改环境变量 . export ALL_PROXY=socks5://127.0.0.1:1080 export http_proxy=socks5://127.0.0.1:1080 export https_proxy=socks5://127.0.0.1:1080 export http_proxy=http://127.0.0.1:1080 export https_proxy=http://127.0.0.1:1080 . 删除ALL_PROXY变量，关闭代理 . unset ALL_PROXY . ",
     "url": "/wiki/docs/network/proxy/#3-%E6%9C%AC%E5%9C%B0%E8%AE%BE%E7%BD%AE%E6%B5%81%E9%87%8F%E8%BD%AC%E5%8F%91%E5%88%B01080%E7%AB%AF%E5%8F%A3",
     
     "relUrl": "/docs/network/proxy/#3-本地设置流量转发到1080端口"
-  },"32": {
+  },"37": {
     "doc": "Tools",
     "title": "Tools",
     "content": ". | Favicon generator | Let’s Encrypt生成ssl证书（官方推荐Certbot） | . ",
     "url": "/wiki/docs/links/tools/",
     
     "relUrl": "/docs/links/tools/"
-  },"33": {
+  },"38": {
     "doc": "Wireshark",
     "title": "Wireshark",
     "content": " ",
     "url": "/wiki/docs/network/wireshark/",
     
     "relUrl": "/docs/network/wireshark/"
-  },"34": {
+  },"39": {
     "doc": "Wireshark",
     "title": "TLS/SSL 加密流量解密",
     "content": "创建 /path/to/ssl_key.log 空文件 . touch /path/to/ssl_key.log . 设置 SSLKEYLOGFILE 环境变量，再在此终端中打开浏览器（浏览器使用此环境变量将ssl_key记录到文件中） . export SSLKEYLOGFILE=/path/to/ssl_key.log . 打开 Wireshark，进入 Edit -&gt; Preferences -&gt; Protocols -&gt; TLS . 设置 (Pre)-Master-Secret log filename 为上述密钥日志文件路径（如 /path/to/ssl_key.log ） . 重新抓包，HTTPS 流量将自动解密。找到 Client Hello 包，右击选择 Follow -&gt; TLS Stream ，即可看到解密后的明文 . （payload部分如果是乱码，有可能是因为 HTTPS 流量使用 Content-Encoding: gzip 压缩，Wireshark不会自动解压压缩数据。Gzip 文件头格式为 1F 8B ，可以将这部分内容提取出来，解压后即为明文。） . xxd -r -p hex.txt response.gz gzip -d response.gz # response.gz被删除，输出解压后的文件 response . ",

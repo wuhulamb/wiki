@@ -13,4 +13,10 @@ git merge <span class="nt">--ff-only</span> &lt;branch&gt; <span class="c"># 合
 git branch <span class="nt">-d</span> &lt;branch&gt;       <span class="c"># 删除合并后的分支</span>
 git reset <span class="nt">--soft</span> &lt;commit&gt;    <span class="c"># 重置提交记录，不修改暂存区文件</span>
 git reset <span class="nt">--hard</span> &lt;commit&gt;    <span class="c"># 重置提交记录，完全重置</span>
+</code></pre></div></div> <h2 id="下载所有远程分支"> <a href="#下载所有远程分支" class="anchor-heading" aria-labelledby="下载所有远程分支"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 下载所有远程分支 </h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;repository-url&gt;
+<span class="nb">cd</span> &lt;repository-name&gt;
+git fetch <span class="nt">--all</span>              <span class="c"># 下载所有远程分支</span>
+git branch <span class="nt">-r</span>                <span class="c"># 列出所有远程分支</span>
+git branch <span class="nt">--track</span> &lt;local-branch&gt; origin/&lt;remote-branch&gt;  <span class="c"># 创建本地分支并设置跟踪关系</span>
+git branch                   <span class="c"># 查看设置好的本地分支</span>
 </code></pre></div></div> </main> <hr> <footer> <p><a href="#top" id="back-to-top">Back to top</a></p> <p class="text-small text-grey-dk-100 mb-0">Copyright &copy; 2025 wuhulamb</p> </footer> </div> </div> <div class="search-overlay"></div> </div> </body> </html>

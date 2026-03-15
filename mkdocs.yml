@@ -1,4 +1,5 @@
 site_name: "wuhulamb's wiki"
+site_url: https://wuhulamb.github.io/wiki/
 
 nav:
   - Home: index.md

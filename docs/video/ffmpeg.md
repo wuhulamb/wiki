@@ -1,9 +1,3 @@
----
-title: "ffmpeg"
-parent: "Video"
-nav_order: 1
----
-
 # ffmpeg
 
 ## 检查视频

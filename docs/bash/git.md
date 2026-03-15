@@ -1,9 +1,3 @@
----
-title: "Git"
-parent: "Bash"
-nav_order: 3
----
-
 # Git
 
 ## 查看

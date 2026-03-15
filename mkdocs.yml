@@ -3,6 +3,7 @@ site_url: https://wuhulamb.github.io/wiki/
 
 nav:
   - Home: index.md
+  - Bookmarks: bookmarks.md
   - Network:
       - Proxy: network/proxy.md
       - Wireshark: network/wireshark.md
@@ -22,3 +23,13 @@ nav:
 theme:  
   name: material
   locale: en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tilde

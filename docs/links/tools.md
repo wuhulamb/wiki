@@ -1,9 +1,3 @@
----
-title: "Tools"
-parent: "Links"
-nav_order: 2
----
-
 # Tools
 
 <ul>

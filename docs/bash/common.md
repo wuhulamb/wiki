@@ -1,9 +1,3 @@
----
-title: "Common"
-parent: "Bash"
-nav_order: 1
----
-
 # Common
 
 ## 1. 将当前文件夹所有pdf文件转成txt文件

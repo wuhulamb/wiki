@@ -1,9 +1,3 @@
----
-title: "PDF处理"
-parent: "Bash"
-nav_order: 2
----
-
 # PDF处理
 
 ## 1. 简单提取/合并PDF文件

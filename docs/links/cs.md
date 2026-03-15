@@ -1,9 +1,3 @@
----
-title: "CS"
-parent: "Links"
-nav_order: 1
----
-
 # CS
 
 <ul>

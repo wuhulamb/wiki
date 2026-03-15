@@ -1,9 +1,3 @@
----
-title: "阅读文献"
-parent: "Prompt"
-nav_order: 1
----
-
 # 阅读文献
 
 ## 01 查看文献大纲

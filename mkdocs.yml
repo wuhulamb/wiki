@@ -1,0 +1,23 @@
+site_name: "wuhulamb's wiki"
+
+nav:
+  - Home: index.md
+  - Network:
+      - Proxy: network/proxy.md
+      - Wireshark: network/wireshark.md
+  - Video:
+      - M3U8: video/m3u8.md
+      - FFmpeg: video/ffmpeg.md
+  - Bash:
+      - Common: bash/common.md
+      - Git: bash/git.md
+      - PDF: bash/pdf.md
+  - Prompt:
+      - Literature: prompt/literature.md
+  - Links:
+      - CS: links/cs.md
+      - Tools: links/tools.md
+
+theme:  
+  name: material
+  locale: en

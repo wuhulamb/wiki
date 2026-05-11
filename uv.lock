@@ -302,13 +302,17 @@ source = { virtual = "." }
 
 [package.dev-dependencies]
 dev = [
+    { name = "mkdocs" },
     { name = "mkdocs-material" },
 ]
 
 [package.metadata]
 
 [package.metadata.requires-dev]
-dev = [{ name = "mkdocs-material", specifier = ">=9.7.5" }]
+dev = [
+    { name = "mkdocs", specifier = "==1.6.1" },
+    { name = "mkdocs-material", specifier = "==9.7.5" },
+]
 
 [[package]]
 name = "packaging"

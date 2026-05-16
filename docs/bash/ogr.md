@@ -23,3 +23,9 @@ ogr2ogr -f "ESRI Shapefile" \
   -sql "SELECT * FROM \"中国_县\" WHERE ST_GeometryType(geometry) = 'MULTIPOLYGON'" \
   output.shp 中国_县.geojson
 ```
+
+坐标系转为 EPSG:4528
+
+```bash
+ogr2ogr -t_srs EPSG:4528 output.gpkg shanghai_city.gpkg
+```

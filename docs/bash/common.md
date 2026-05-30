@@ -50,3 +50,11 @@ kill -SIGINT <PID>
 ```bash
 sed "s|^|mv /home/user/|; s|$| /tmp/somewhere/|" files.txt
 ```
+
+## 5. sudo fsck [filesystem...]
+
+检查并修复SD卡
+
+```bash
+sudo fsck /dev/sdb1
+```

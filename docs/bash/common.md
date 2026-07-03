@@ -58,3 +58,27 @@ sed "s|^|mv /home/user/|; s|$| /tmp/somewhere/|" files.txt
 ```bash
 sudo fsck /dev/sdb1
 ```
+
+## 6. 移除txt后缀，拼接pdf后缀（，拷贝pdf）
+
+在目标txt文献的上一级目录运行下面的脚本
+
+```bash
+#!/bin/bash
+
+pdf_dir="/home/xu/Documents/ecnu/中国产业集聚与产业演化文献综述/参考文献/selected_refs/"  # 包括所有pdf文献
+orig_dir="中国产业集聚/"       # 包括目标txt文献
+dest_dir="中国产业集聚-pdf/"   # 拷贝的pdf文献路径
+mkdir -p "$dest_dir"
+
+find "$orig_dir" -type f -name "*.txt" -print0 | while IFS= read -r -d '' txt; do
+    # 提取纯文件名（不含路径）
+    basename="${txt##*/}"
+    name="${basename%.txt}"
+    pdf_file="$pdf_dir/${name}.pdf"
+    if [ -f "$pdf_file" ]; then
+        cp "$pdf_file" "$dest_dir/"
+        echo "已复制: $name.pdf"
+    fi
+done
+```

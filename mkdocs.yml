@@ -14,6 +14,7 @@ nav:
       - Common: bash/common.md
       - Git: bash/git.md
       - PDF: bash/pdf.md
+      - JPG: bash/jpg.md
       - ogr: bash/ogr.md
   - Prompt:
       - Literature: prompt/literature.md

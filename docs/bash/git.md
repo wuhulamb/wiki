@@ -45,3 +45,15 @@ git branch -r                # 列出所有远程分支
 git branch --track <local-branch> origin/<remote-branch>  # 创建本地分支并设置跟踪关系
 git branch                   # 查看设置好的本地分支
 ```
+
+## Username for 'https://github.com':
+
+本地配置好密钥，但是 `git push` 提示输入Username
+
+输入 `git remote -v` 查看远程仓库地址，如果是 `https://github.com/` ，则需要更换为 `git@github.com` 这种地址。原因是 `git clone https://github.com/wuhulamb/world-regional-studies.git`
+
+下面是替换远程仓库地址的命令
+
+```bash
+git remote set-url origin git@github.com:wuhulamb/world-regional-studies.git
+```

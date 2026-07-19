@@ -16,6 +16,7 @@ nav:
       - PDF: bash/pdf.md
       - JPG: bash/jpg.md
       - ogr: bash/ogr.md
+      - cerbot: bash/cerbot.md
   - Prompt:
       - Literature: prompt/literature.md
   - Links:
